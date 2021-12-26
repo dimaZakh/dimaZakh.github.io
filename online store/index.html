@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Интернет-магазин</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="container mb-5">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row" id="products-container"></div>
+			</div>
+			<div class="col-md-4">
+
+				<!-- Корзина -->
+				<div class="card mb-4">
+					<div class="card-body">
+						<h5 class="card-title">Ваш заказ</h5>
+						<div data-cart-empty class="alert alert-secondary" role="alert">
+							Корзина пуста
+						</div>
+
+						<div class="cart-wrapper"></div>
+
+						<div class="cart-total">
+
+							<p><span class="h5">Итого:</span> <span class="total-price">0</span> <span class="rouble">₽</span></p>
+						</div>
+
+					</div>
+
+					<div id="order-form" class="card-body border-top none">
+						<h5 class="card-title">Оформить заказ</h5>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Ваш номер телефона">
+							</div>
+							<button type="submit" class="btn btn-primary">Заказать</button>
+						</form>
+					</div>
+
+				</div>
+				<!-- // Корзина -->
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<script src="script.js"></script>
+
+
+</body>
+</html>
